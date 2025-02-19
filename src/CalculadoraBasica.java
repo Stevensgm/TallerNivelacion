@@ -47,9 +47,7 @@ public class CalculadoraBasica {
                 System.out.println("**** error error error ****.");
                 break;
         }
-
         /// carlos steven giraldo medina
-
         scanner.close();
     }
 }
