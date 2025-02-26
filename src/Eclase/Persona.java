@@ -26,9 +26,10 @@ public class Persona {
     }
 
     public int calcularEdad() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); ///
         LocalDate fechaNacimiento = LocalDate.parse(fNacimiento, formatter);
         LocalDate fechaActual = LocalDate.now();
         return Period.between(fechaNacimiento, fechaActual).getYears();
     }
 }
+/// se convirtio la fecha String en un formato feccha para poder calcular en que año nacio
